@@ -75,33 +75,4 @@ class PreguntaController extends Controller
 
         return $respuestas;
 
-
-        /* $user= Auth::user()->id;
-
-        $valorGastos = ' '.$user;
-        $valorEducacion = 'SELECT SUM(RES_RESPUESTA) AS CAL_EDUCACION_V FROM respuestas  AS r JOIN preguntas AS p ON R.PRE_ID=P.PRE_ID RIGHT JOIN categorias as C ON P.CAT_ID=C.CAT_ID RIGHT JOIN calificaciones AS ca ON r.CAL_ID = ca.CAL_ID WHERE C.CAT_ID = 2 And ca.CAL_USE_ID ='.$user;
-        $valorAhorro = 'SELECT SUM(RES_RESPUESTA) AS CAL_AHORRO_V FROM respuestas  AS r JOIN preguntas AS p ON R.PRE_ID=P.PRE_ID RIGHT JOIN categorias as C ON P.CAT_ID=C.CAT_ID RIGHT JOIN calificaciones AS ca ON r.CAL_ID = ca.CAL_ID WHERE C.CAT_ID = 3 And ca.CAL_USE_ID ='.$user;
-        $valorDivercion = 'SELECT SUM(RES_RESPUESTA) AS CAL_DIVERCION_V FROM respuestas  AS r JOIN preguntas AS p ON R.PRE_ID=P.PRE_ID RIGHT JOIN categorias as C ON P.CAT_ID=C.CAT_ID RIGHT JOIN calificaciones AS ca ON r.CAL_ID = ca.CAL_ID WHERE C.CAT_ID = 4 And ca.CAL_USE_ID ='.$user;
-        $valorInvercion = 'SELECT SUM(RES_RESPUESTA) AS CAL_INVERCION_V FROM respuestas  AS r JOIN preguntas AS p ON R.PRE_ID=P.PRE_ID RIGHT JOIN categorias as C ON P.CAT_ID=C.CAT_ID RIGHT JOIN calificaciones AS ca ON r.CAL_ID = ca.CAL_ID WHERE C.CAT_ID = 5 And ca.CAL_USE_ID ='.$user;
-        $valorDonacion = 'SELECT SUM(RES_RESPUESTA) AS CAL_DONACION_V FROM respuestas  AS r JOIN preguntas AS p ON R.PRE_ID=P.PRE_ID RIGHT JOIN categorias as C ON P.CAT_ID=C.CAT_ID RIGHT JOIN calificaciones AS ca ON r.CAL_ID = ca.CAL_ID WHERE C.CAT_ID = 6 And ca.CAL_USE_ID ='.$user;
-        $valorRemanente = 'SELECT SUM(RES_RESPUESTA) AS CAL_REMANENTE_V FROM respuestas  AS r JOIN preguntas AS p ON R.PRE_ID=P.PRE_ID RIGHT JOIN categorias as C ON P.CAT_ID=C.CAT_ID RIGHT JOIN calificaciones AS ca ON r.CAL_ID = ca.CAL_ID WHERE C.CAT_ID = 7 And ca.CAL_USE_ID ='.$user;
-        $valorIngresos = 'SELECT SUM(RES_RESPUESTA) AS CAL_INGRESO_V FROM respuestas  AS r JOIN preguntas AS p ON R.PRE_ID=P.PRE_ID RIGHT JOIN categorias as C ON P.CAT_ID=C.CAT_ID RIGHT JOIN calificaciones AS ca ON r.CAL_ID = ca.CAL_ID WHERE C.CAT_ID = 8 And ca.CAL_USE_ID ='.$user;
-
-        $totalGastos = DB::select($valorGastos);
-        $totalEducacion = DB::select($valorEducacion);
-        $totalAhorro = DB::select($valorAhorro);
-        $totalDivercion = DB::select($valorDivercion);
-        $totalInvercion = DB::select($valorInvercion);
-        $totalDonacion = DB::select($valorDonacion);
-        $totalRemanente = DB::select($valorRemanente);
-        $totalIngresos = DB::select($valorIngresos);
-
-
-        $porcentajeDivercion = round(($totalDivercion['0'] / $totalIngresos['0'])*100);
-*/
-     /* return $calificacion; */
-
-}
-
-
 }
